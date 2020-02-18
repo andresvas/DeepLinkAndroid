@@ -92,9 +92,8 @@
       <universal-links>
     <ios-team-id value="2WDTH99JC5" />
     <host name="www.grupobancolombia.com" scheme="https">
-        <path url="/*" />
+        <path url="wps/portal/personas/*" />
     </host>
-    <host name="www.grupobancolombia.com" scheme="https"/>
     </universal-links>
 
     <preference name="AndroidLaunchMode" value="singleInstance" />
