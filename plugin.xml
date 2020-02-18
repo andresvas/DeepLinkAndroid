@@ -88,12 +88,14 @@
         <param name="onload" value="true"/>
       </feature>
 
-
+    <universal-links>
+    <ios-team-id value="2WDTH99JC5" />
     <host name="www.grupobancolombia.com" scheme="https">
         <path url="/*" />
     </host>
     <host name="www.grupobancolombia.com" scheme="https"/>
     </universal-links>
+
 
     <preference name="AndroidLaunchMode" value="singleInstance" />
 
