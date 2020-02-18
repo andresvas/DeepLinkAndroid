@@ -16,7 +16,7 @@ public class ULHost {
     // default scheme for the host
     private static final String DEFAULT_SCHEME = "http";
 
-    private final List<ULPath> paths;
+    private  List<ULPath> paths;
     private final String name;
     private final String scheme;
     private String event;
@@ -61,6 +61,11 @@ public class ULHost {
      */
     public List<ULPath> getPaths() {
         return paths;
+    }
+
+
+    public  void setPaths(List<ULPath> pathsData) {
+        paths = pathsData;
     }
 
     /**
