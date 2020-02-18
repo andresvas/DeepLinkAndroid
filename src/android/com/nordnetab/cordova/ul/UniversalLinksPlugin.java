@@ -8,6 +8,7 @@ import android.util.Log;
 import com.nordnetab.cordova.ul.js.JSAction;
 import com.nordnetab.cordova.ul.model.JSMessage;
 import com.nordnetab.cordova.ul.model.ULHost;
+import com.nordnetab.cordova.ul.model.ULPath;
 import com.nordnetab.cordova.ul.parser.ULConfigXmlParser;
 
 import org.apache.cordova.CallbackContext;
@@ -18,6 +19,7 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult;
 import org.json.JSONException;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,7 +34,7 @@ public class UniversalLinksPlugin extends CordovaPlugin {
 
 
     // name host
-    private  final  String DEEP_LINK_HOST = "www.grupobancolombia.com/wps/portal/personas";
+    private  final  String DEEP_LINK_HOST = "www.grupobancolombia.com";
     private final  String SCHEME = "https";
 
     // list of hosts, defined in config.xml
@@ -212,6 +214,12 @@ public class UniversalLinksPlugin extends CordovaPlugin {
         ULHost host = null;
             if (DEEP_LINK_HOST.equalsIgnoreCase(url.getHost())) {
              host = new ULHost(url.getHost(),SCHEME, null);
+             String data = url.getPath();
+
+                ULPath path = new ULPath(url.getPath(), "");
+                List<ULPath> ulPaths = new ArrayList<>();
+                ulPaths.add(path);
+                host.setPaths(ulPaths);
              Log.d("UniversalLinks", url.getHost());
 
             }
