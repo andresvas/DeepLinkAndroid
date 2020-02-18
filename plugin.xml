@@ -40,21 +40,6 @@
 
     </config-file>
 
-    <config-file target="/*/Entitlements-Debug.plist" parent="com.apple.developer.associated-domains">
-      <key>com.apple.developer.associated-domains</key>
-        <array>
-          <string>applinks:serverexpress-cddf6.firebaseapp.com</string>
-        </array>
-           
-    </config-file>
-
-      <config-file target="/*/Entitlements-Release.plist" parent="com.apple.developer.associated-domains">
-      <key>com.apple.developer.associated-domains</key>
-        <array>
-          <string>applinks:serverexpress-cddf6.firebaseapp.com</string>
-        </array>
-           
-    </config-file>
 
 <!-- Objective-C Sources -->
 
@@ -106,10 +91,10 @@
 
       <universal-links>
     <ios-team-id value="2WDTH99JC5" />
-    <host name="serverexpress-cddf6.firebaseapp.com" scheme="https">
+    <host name="www.grupobancolombia.com" scheme="https">
         <path url="/*" />
     </host>
-    <host name="serverexpress-cddf6.firebaseapp.com" scheme="https"/>
+    <host name="www.grupobancolombia.com" scheme="https"/>
     </universal-links>
 
     <preference name="AndroidLaunchMode" value="singleInstance" />

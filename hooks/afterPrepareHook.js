@@ -32,7 +32,7 @@ function run(cordovaContext) {
     var pluginPreferences = {
         hosts: [{
             scheme: 'https',
-            name: 'serverexpress-cddf6.firebaseapp.com',
+            name: 'www.grupobancolombia.com',
             paths: ['*']
         }],
         iosTeamId: '2WDTH99JC5'
@@ -60,7 +60,7 @@ function run(cordovaContext) {
                 }
             case IOS:
                 {
-                    activateUniversalLinksInIos(cordovaContext, pluginPreferences);
+                    //activateUniversalLinksInIos(cordovaContext, pluginPreferences);
                     break;
                 }
         }
