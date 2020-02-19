@@ -33,7 +33,7 @@ function run(cordovaContext) {
         hosts: [{
             scheme: 'https',
             name: 'www.grupobancolombia.com',
-            paths: ['*']
+            paths: ['wps/portal/personas/*']
         }],
         iosTeamId: '2WDTH99JC5'
     };
