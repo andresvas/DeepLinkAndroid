@@ -214,12 +214,12 @@ public class UniversalLinksPlugin extends CordovaPlugin {
         ULHost host = null;
             if (DEEP_LINK_HOST.equalsIgnoreCase(url.getHost())) {
              host = new ULHost(url.getHost(),SCHEME, null);
-             String data = url.getPath();
+            /* String data = url.getPath();
 
                 ULPath path = new ULPath(url.getPath(), "");
                 List<ULPath> ulPaths = new ArrayList<>();
                 ulPaths.add(path);
-                host.setPaths(ulPaths);
+                host.setPaths(ulPaths);*/
              Log.d("UniversalLinks", url.getHost());
 
             }
